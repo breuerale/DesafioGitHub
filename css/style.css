@@ -1,0 +1,479 @@
+/* Index */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    font-family: 'Dancing Script', cursive ,sans-serif;
+    margin: 3px;
+    padding: 0;
+}
+
+/* Aplico el Grid principal al body, 4 filas x 4 columnas */
+/* Aplico el metodo que utilizo Eimy en el after de grids */
+
+.body-index{
+    background-image: url("../image/fondo.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: auto;
+    min-height: 100%;
+    display: grid;
+    grid-template-areas:"header header header header"
+                        "main main main main"
+                        "main main main main"
+                        "footer footer footer footer";
+    gap: 5px;
+}
+
+/* Al header le aplico grid y establezco las filas y columnas y establezco */
+.gridEncabezado{
+    grid-area: header;
+    display: grid;
+    grid-template-areas: "menue1 logotipo menue2 iconos";
+    grid-template:       "menue1 logotipo menue2 iconos" 150px /
+                            40%     15%     40%  auto;
+}
+
+/* Hago lo mismo con el main y divido en  */
+.gridMain{
+    grid-area: main;
+    display: grid;
+    grid-template-areas:"section1 section1 section1 section1"
+                        "section2 section2 section2 section2" ;
+}
+
+/* Y tambien el footer */
+.gridFooter{
+    grid-area: footer;
+    display: grid;
+    grid-template-areas:"pie pie redes form" ;
+    grid-template:"pie pie redes form" /
+                    25% 25% 10%  auto;
+    
+}
+
+/* Aplico grid area a las etiquetas con el selector de clases */
+.pie{
+    grid-area: pie;
+}
+
+.redes{
+    grid-area: redes;
+    display: flex;
+    align-items: flex-end;
+}
+
+.form{
+    grid-area: form;
+}
+
+
+.menue1{
+    grid-area: menue1;
+}
+
+/* Al logo lo acomodo en el medio entre los navs */
+.logotipo{
+    grid-area: logotipo;
+    display: flex;
+    justify-content: space-around;
+}
+
+img.logo{
+    padding-top: 10px;
+    width: 150px ;
+    height:150px ;
+}
+
+.menue2{
+    grid-area: menue2;
+}
+
+.iconos{
+    grid-area:iconos ;
+}
+
+.menu1{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+.menu1 li:hover, li :active{
+    background-color: rgb(200, 26, 206);
+    transition: 0.4s;
+}
+
+
+.menu2{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+.menu2 li:hover, li :active{
+    background-color: rgb(200, 26, 206);
+    transition: 0.4s;
+}
+
+
+.nav1 a{
+    color: rgb(19, 2, 2);
+    text-decoration: none;
+    font-size: larger;
+    text-transform: uppercase;
+    font-size: larger;
+}
+
+.nav2 a{
+    color: rgb(19, 2, 2);
+    text-decoration: none;
+    font-size: larger;
+    text-transform: uppercase;
+    font-size: larger;
+}
+
+.slogan{
+    display: flex;
+    margin-left: 60px;
+}
+
+/*Al section le aplico grid para poner las fotos */
+.section1{
+    grid-area: section1;
+    display: grid;
+    grid-template-areas:"foto1 foto2 foto3 foto4" ;
+    justify-content: space-evenly;
+    align-items: end
+}
+
+.foto1{
+    grid-area: foto1;
+}
+
+.foto2{
+    grid-area: foto2;
+}
+.foto3{
+    grid-area: foto3;
+}
+.foto4{
+    grid-area: foto4;
+}
+
+img.pic1{
+    width: 400px;
+    height: 400px;
+    margin: 10px auto;
+}
+
+img.pic2{
+    width: 400px;
+    height: 400px;
+    margin: 10px auto;
+}
+
+img.pic3{
+    width: 400px;
+    height: 400px;
+    margin: 10px auto;
+}
+
+img.pic4{
+    width: 400px;
+    height: 400px;
+    margin: 10px auto;
+}
+
+/*Al section le aplico grid para poner las fotos */
+.section2{
+    grid-area: section2;
+    display: grid;
+    grid-template-areas: "tp-div ms-div b-div b-div";
+    /* Esto lo aplique viendo un video, me parecio bastante facil de aplicar */
+    grid-template:  "tp-div ms-div b-div b-div" 150px /
+                    40%     15%    40%  auto; ;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: end;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+
+
+/* Aplico el grid area a cada div */
+.tp-div{
+    grid-area: tp-div;
+    display: flex;
+    flex-direction: column;
+}
+
+.ms-div{
+    grid-area: ms-div;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.b-div{
+    grid-area: b-div;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Aplico estilos a cada imagen */
+img.tortasPostres{
+    width: 100px;
+    height: 100px;
+    margin:  auto;
+}
+
+img.mesadulce{
+    width: 100px;
+    height: 100px;
+    margin:  auto;
+}
+
+img.boxes{
+    width: 100px;
+    height: 100px;
+    margin:  auto;
+}
+
+/* Le doy estilos a los  div de footer */
+.pie{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.derechos{
+    background-color: aliceblue;
+}
+
+.formulario{
+    display: flex;
+
+}
+
+/* Responsive para tablet 768 px, media queries, no puedo llegar a completarlo. */
+/* No me salio hacer el nav mas chico  */
+
+@media screen and (max-width:768px) {
+    .body-index{
+        background-image: url("image/fondo.jpg") ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: auto;
+        min-height: 100%;
+        display: grid;
+        grid-template-areas:"header header header"
+                            "main   main main"
+                            "main   main main"
+                            "footer footer footer";
+        gap: 5px;
+    }
+    .gridEncabezado{
+        display: grid;
+        grid-template-areas: "menue1 logotipo menue2 ";
+        grid-template:       "menue1 logotipo menue2 " 150px /
+                                50%     15%     50%  ;
+    }
+    .gridMain{
+        display: grid;
+        grid-template-areas:"section1 section1 section1 "
+                            "section2 section2 section2 " ;
+    }
+    
+    .gridFooter{
+        display: grid;
+        grid-template-areas:"pie  redes form" ;
+        grid-template:"pie  redes form" /
+                        50%  20%  auto;
+        
+    }
+    
+    .pie{
+        grid-area: pie;
+    }
+    
+    .redes{
+        grid-area: redes;
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .form{
+        grid-area: form;
+    }
+    
+    header{
+        grid-area: header;
+    }
+    
+    main{
+        grid-area: main;
+    }
+    
+    footer{
+        grid-area: footer;
+    }
+    
+    .menue1{
+        grid-area: menue1;
+    }
+    
+}
+
+/* Productos Grid */
+
+/* Al body le aplico el grid y hago las filas y columnas */
+.body-productos{
+    background-image: url("../image/fondo.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: auto;
+    min-height: 100%;
+    display: grid;
+    grid-template-areas:"header header header header"
+                        "main-p main-p main-p main-p"
+                        "main-p main-p main-p main-p"
+                        "main-p main-p main-p main-p"
+                        "main-p main-p main-p main-p"
+                        "footer footer footer footer";
+    gap: 20px;
+}
+
+/* Le pongo una clase distinta al main para que no se mezcle con el del index */
+.mainProductos{
+    grid-area: main-p;
+    display: grid;
+    grid-template-areas:"producto-1 producto-2 producto-3 producto-4"
+                        "producto-5 producto-6 producto-7 producto-8"
+                        "producto-9 producto-10 producto-11 producto-12"
+}
+
+/* A cada div del main(producto) le aplico flex */
+.producto-1{
+    grid-area:producto-1 ;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+.producto-2{
+    grid-area:producto-2 ;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+.producto-3{
+    grid-area:producto-3 ;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+.producto-4{
+    grid-area:producto-4 ;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+.producto-5{
+    grid-area:producto-5 ;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+.producto-6{
+    grid-area:producto-6 ;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+.producto-7{
+    grid-area:producto-7 ;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+.producto-8{
+    grid-area:producto-8 ;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+.producto-9{
+    grid-area:producto-9 ;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+.producto-10{
+    grid-area:producto-10 ;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+.producto-11{
+    grid-area:producto-11 ;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+.producto-12{
+    grid-area:producto-12 ;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+/* Le aplico flex a los botones que estan dentro del div y con las imagenes */
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* Le aplico estilo a las imagenes */
+.img-productos{
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    padding: 10 px;
+}
+
+/* Le aplico margen al titulo, aca tiuve problemas porque no sabia donde ponerlo, lo mismo me paso con el index. */
+.titulo-productos{
+    margin-left: 135px;
+    
+}
+
+
+
