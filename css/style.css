@@ -331,7 +331,7 @@ img.boxes{
 /* Productos Grid */
 
 
-.prductos-index{
+.productos-index{
     background-image: url("../image/fondo.jpg") ;
     background-size: cover;
     background-repeat: no-repeat;
@@ -340,7 +340,6 @@ img.boxes{
     min-height: 100%;
     display: grid;
     grid-template-areas:"header header header header"
-                        "main-p main-p main-p main-p"
                         "main-p main-p main-p main-p"
                         "main-p main-p main-p main-p"
                         "main-p main-p main-p main-p"
