@@ -7,10 +7,9 @@
     padding: 0;
 }
 
-/* Aplico el Grid principal al body, 4 filas x 4 columnas */
-/* Aplico el metodo que utilizo Eimy en el after de grids */
 
-.body-index{
+
+.grid-index{
     background-image: url("../image/fondo.jpg") ;
     background-size: cover;
     background-repeat: no-repeat;
@@ -332,7 +331,7 @@ img.boxes{
 /* Productos Grid */
 
 /* Al body le aplico el grid y hago las filas y columnas */
-.body-productos{
+.grid-productos{
     background-image: url("../image/fondo.jpg") ;
     background-size: cover;
     background-repeat: no-repeat;
