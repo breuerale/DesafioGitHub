@@ -267,6 +267,7 @@ img.boxes{
         background-image: url("../image/fondo.jpg") ;
         background-size: cover;
         background-repeat: no-repeat;
+        min-height: 100%;
         margin: auto;
         display: grid;
         grid-template-areas:"header header header"
@@ -329,8 +330,8 @@ img.boxes{
 
 /* Productos Grid */
 
-/* Al body le aplico el grid y hago las filas y columnas */
-.grid-productos{
+
+.prductos-index{
     background-image: url("../image/fondo.jpg") ;
     background-size: cover;
     background-repeat: no-repeat;
@@ -458,6 +459,7 @@ img.boxes{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background: 141414;
 }
 /* Le aplico estilo a las imagenes */
 .img-productos{
