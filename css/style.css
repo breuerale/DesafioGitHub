@@ -100,7 +100,13 @@ img.logo{
 
 .menu1 li:hover, li :active{
     background-color: rgb(200, 26, 206);
-    transition: 0.4s;
+    font-weight: 500;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
 }
 
 
@@ -113,6 +119,13 @@ img.logo{
 .menu2 li:hover, li :active{
     background-color: rgb(200, 26, 206);
     transition: 0.4s;
+    font-weight: 500;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
 }
 
 
@@ -453,12 +466,32 @@ img.boxes{
 
 }
 
-/* Le aplico flex a los botones que estan dentro del div y con las imagenes */
+/* Le aplico flex al contenedor de  los botones que estan dentro del div y con las imagenes */
 .botones{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background: 141414;
+}
+button{
+    background: white;
+    font-weight: 500;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+
+button:hover, button:active{
+    background-color: rgb(200, 26, 206);
+    font-weight: 500;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
 }
 /* Le aplico estilo a las imagenes */
 .img-productos{
