@@ -263,12 +263,11 @@ img.boxes{
 /* No me salio hacer el nav mas chico  */
 
 @media screen and (max-width:768px) {
-    .body-index{
-        background-image: url("image/fondo.jpg") ;
+    .grid-index{
+        background-image: url("../image/fondo.jpg") ;
         background-size: cover;
         background-repeat: no-repeat;
         margin: auto;
-        min-height: 100%;
         display: grid;
         grid-template-areas:"header header header"
                             "main   main main"
