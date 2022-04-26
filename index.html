@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/171eea792d.js" crossorigin="anonymous"></script>
+    <!-- Link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Merak Sweet</title>
 </head>
@@ -14,30 +16,32 @@
     <div class="grid-index">
 
         <header class="gridEncabezado">
-
+            <!-- Con animacion  -->
             <div class="menue1">
                 <nav class="nav1">
-                    <ul class="menu1">
+                    <ul class="menu1" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="pages/novedades.html">Novedades</a></li>
                         <li><a href="pages/contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="logotipo">
+            <!-- Al logo le inclui una animacion -->
+            <div class="logotipo" data-aos="fade-down">
                 <img class="logo" src="image\logo.jpg" alt="logo">
             </div>
+            <!-- Con animacion -->
             <div class="menue2">
                 <nav class="nav2">
-                    <ul class="menu2">
+                    <ul class="menu2" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
                         <li><a href="pages/ubicacion.html">Ubicacion</a></li>
                         <li><a href="pages/productos.html">Productos</a></li>
                         <li><a href="pages/nosotras.html">Nosotras</a></li>
                     </ul>
                 </nav>
             </div>
-
-            <div class="iconos">
+            <!-- Inserte animaciones en todas las imagenes -->
+            <div class="iconos" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <i class="fa-solid fa-right-to-bracket "></i>
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
@@ -45,41 +49,40 @@
         </header>
         <main class="gridMain">
             <section class="section1">
-                <div class="foto1">
-
+                <div class="foto1" data-aos="zoom-in-up" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                     <h2 class="titulo2">Tortas, Postres y Boxes personalizados</h2>
                     <img class="pic1" src="image\tartas.jpg">
                 </div>
-                <div class="foto2">
+                <div class="foto2" data-aos="zoom-in-up" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                     <img class="pic2" src="image\3tortas.jpg">
                 </div>
-                <div class="foto3">
+                <div class="foto3" data-aos="zoom-in-up" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                     <img class="pic3" src="image\box1.jpg">
                 </div>
-                <div class="foto4">
+                <div class="foto4" data-aos="zoom-in-up" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                     <img class="pic4" src="image\paletas.jpg">
                 </div>
             </section>
 
             <section class="section2">
-                <div class="tp-div">
+                <div class="tp-div" data-aos="zoom-in-right" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" >
                     <img class="tortasPostres" src="image/rogel.jpg">
                     <h3 class="fservicios-subtitulo1">Tortas y Postres</h3>
                 </div>
-                <div class="ms-div">
-                    <!-- Productos no me quedo como queria -->
+                <div class="ms-div" data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                    
                     <h2 class="titulo3">Productos</h2>
                     <img class="mesadulce" src="image/pepitos.jpg">
                     <h3 class="fservicios-subtitulo1">Mesa Dulce</h3>
                 </div>
-                <div class="b-div">
+                <div class="b-div" data-aos="zoom-in-left" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                     <img class="boxes" src="image/box2.jpg">
                     <h3 class="fservicios-subtitulo2">Boxes</h3>
                 </div>
 
             </section>
         </main>
-        <!-- Aca en el footer inclui los iconos de redes -->
+        
         <footer class="gridFooter">
             <div class="pie">
                 <p class="derechos">
@@ -103,6 +106,11 @@
             </div>
         </footer>
     </div>
+    <!-- Script de AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
